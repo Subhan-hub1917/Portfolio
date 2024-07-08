@@ -1,0 +1,236 @@
+@font-face {
+  font-family: "Outfit-Bold";   /*Can be any text*/
+  src: local("Outfit-Bold"),
+    url("./components//fonts/Outfit-Bold.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Outfit-Medium";   /*Can be any text*/
+  src: local("Outfit-Medium"),
+    url("./components//fonts/Outfit-Medium.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Outfit-Regular";   /*Can be any text*/
+  src: local("Outfit-Regular"),
+    url("./components//fonts/Outfit-Regular.ttf") format("ttf");
+}
+body {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* Internet Explorer/Edge */
+  user-select: none;         /* Standard syntax */
+}
+
+.height-90{
+    height: 90%;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  .height-100 {
+    height: 100vh;
+  }
+
+  @media (max-width: 1199.98px) {
+    .height-lg-100 {
+      height: 100%;
+    }
+  }
+  @media (max-width: 991.98px) {
+    .height-md-80 {
+      height: 80vh;
+    }
+  }
+  @media (max-width: 767.98px) {
+    .height-sm-70 {
+      height: 70vh;
+    }
+  }
+  @media (max-width: 575.98px) {
+    .height-xs-60 {
+      height: 60vh;
+    }
+  }
+.active-link div {
+  color: #1A5319; /* Example color: Gold */
+ }
+.text-p{
+  color: #1A5319;
+}
+
+.text-s{
+  color: #9CDBA6;
+}
+
+.text-b{
+  color: #000000;
+}
+
+.bg-p{
+  background-color: #1A5319;
+}
+.bg-s{
+  background-color: #9CDBA6;
+}
+.bg-b{
+  background-color: #000000;
+}
+.border-p{
+  border: solid  #9CDBA6;
+}
+.child:hover *{
+  color: #000000;
+}
+.f{
+  font-size: small;
+}
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .justify-content-center-md-sm {
+    justify-content: center !important;
+  }
+}
+.service:hover {
+  background-color:  #508D4E;
+}
+.image-container {
+  position: relative;
+  display:block;
+}
+
+.image-container::before, .image-container::after {
+  z-index: 10;
+  content: '';
+  position: absolute;
+  border: 2px solid  #508D4E; 
+}
+
+.image-container::before {
+  top: -20px;
+  left: -20px; 
+  height: 50%;
+}
+
+.image-container::after {
+  bottom: -20px;
+  right: -20px; 
+  height: 50%;
+}
+@media (max-width: 991.98px) {
+  /* For sm screens (768px and below) */
+  .image-container::before {
+    left: -20px; 
+  }
+  .image-container::after {
+    right: -20px;
+  }
+}
+
+.border-bot {
+  position: relative; /* Ensure the pseudo-elements are positioned relative to this element */
+}   
+
+.border-bot::before, .border-bot::after {
+  z-index: 10;
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  height: 2px;
+  z-index: 20;
+   
+}
+
+.border-bot::before {
+  bottom: -2px;
+  left: 0px;
+  width: 50%; 
+  background: linear-gradient(to left, silver, rgba(192,192,192,0));
+}
+
+.border-bot::after {
+  bottom: -2px;
+  right: 0px;
+  width: 50%; /* Adjust as needed */
+  background: linear-gradient(to right, silver, rgba(192,192,192,0));
+}
+
+
+.image-container2 {
+  position: relative;
+  display:block;
+}
+
+.image-container2::before, .image-container2::after {
+  z-index: 10;
+  content: '';
+  position: absolute;
+  border: 2px solid  #508D4E; 
+}
+
+.image-container2::before {
+  top: -20px;
+  left: -20px; 
+  width: 50%;
+}
+
+.image-container2::after {
+  bottom: -20px;
+  right: -20px;
+  width: 50%;
+}
+
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+.list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.link {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+}
+
+.link::before,
+.link::after {
+  content: '';
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #9CDBA6;
+/* #1A5319 #9CDBA6 */
+  transform: scaleX(0);
+  transition: transform 0.25s;
+}
+
+.link::before {
+  top: -3px;
+  transform-origin: left;
+}
+
+.link::after {
+  bottom: -3px;
+  transform-origin: right;
+}
+
+.link:hover::before,
+.link:hover::after,
+.active::before,
+.active::after {
+  transform: scaleX(1);
+}
+
+
+.name {
+  position: absolute;
+  top: 70%;
+  font-size: 11px;
+  color: #00fffc;
+  font-weight: 800;
+}
