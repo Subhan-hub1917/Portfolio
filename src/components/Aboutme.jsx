@@ -15,12 +15,12 @@ const Aboutme =()=> {
       <div className='row d-flex align-items-center justify-content-between'>
         <div className='col-lg-6 col-12'>
             <div className='row d-flex m-3'>
-              <div className='col-6'>
+              <div className='col-md-6 col-12 text-center'>
               <div  className='text-s d-flex border-bot mb-2'><h6>Country: </h6><p className='ms-2 text-light'>  Pakistan</p></div>
               <div  className='text-s d-flex border-bot mb-2'><h6>Phone: </h6><p className='ms-2 text-light'>  +92342-0443066</p></div>
               <div  className='text-s d-flex border-bot mb-2'><h6>Age: </h6><p className='ms-2 text-light'>  21</p></div>
             </div>
-            <div className='col-6'>
+            <div className='col-md-6 col-12 text-center '>
               <div  className='text-s d-flex border-bot mb-2'><h6>Languages: </h6><p className='ms-2 text-light'>  Urdu/English</p></div>
               <div  className='text-s d-flex border-bot mb-2'><h6>Country: </h6><p className='ms-2 text-light'>  Pakistan</p></div>
               <div  className='text-s d-flex border-bot mb-2'><h6>Degree: </h6><p className='ms-2 text-light'>  BSCS</p></div>

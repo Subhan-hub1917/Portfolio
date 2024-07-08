@@ -51,6 +51,18 @@ body {
       height: 60vh;
     }
   }
+  .image{
+    height: 470px;
+    width: 350px;
+    object-fit: cover;
+  }
+  
+  @media (max-width: 768px) {
+    .image{
+      height: 350px;
+      width: 200px;
+    }
+  }
 .active-link div {
   color: #1A5319; /* Example color: Gold */
  }
@@ -233,4 +245,38 @@ body {
   font-size: 11px;
   color: #00fffc;
   font-weight: 800;
+}
+
+.Name{
+  width: 300;
+  height: 30;
+}
+
+.Contact{
+  width: 300;
+  height: 30;
+}
+
+@media (max-width: 991.98px) { 
+.name {
+  position: absolute;
+  top: 70%;
+  font-size: 5px;
+  color: #00fffc;
+  font-weight: 600;
+}
+.list {
+  gap: 15px;
+}
+
+.link {
+  font-weight: 600;
+}
+.inputName{
+  width: 150;
+}
+
+.inputContact{
+  width: 150;
+}
 }
