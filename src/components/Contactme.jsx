@@ -12,55 +12,57 @@ const Contactme=()=>{
   }
   return (
     <motion.div  initial={{rotateY:90}} animate={{rotateY:0}} exit={{rotateY:-90}}  transition={{duration:0.5,ease:'backInOut'}} layout className='p-lg-3 col-lg-10 col-12 bg-dark' style={{fontFamily:'Outfit-Regular'}}>
-        <h4 className='text-s pt-4' style={{fontFamily:'Outfit-Bold',fontWeight:'bolder'}}>Contact Me</h4>
-      <div className='row '>
+        <h4 className='text-s pt-4' style={{fontFamily:' Outfit-Regular',fontWeight:'bolder'}}>Contact Me</h4>
+      <div className='row  Outfit'>
       <div className='d-flex d-lg-none text-center text-s'>
           <div className='col-6 justify-content-center '>
             <div className='m-2'>
               <i className='bi bi-phone-fill h5 h3-lg'></i>
-              <h6>Mobile No</h6>
               <p className='text-light f'>+923420443066</p>
             </div>
             <div className='m-2'>
               <i className='bi bi-map-fill h5 h3-lg'></i>
-              <h6>Location</h6>
               <p  className='text-light f'>Sargodha</p>
             </div>
           </div>
-          <div className='col-6  justify-content-center '>
-            <div className='m-2'>
-              <i className='bi bi-envelope-fill h5 h3-lg'></i>
-              <h6>Email</h6>
-              <p className='text-light f'>subiq1917@gmail.com</p>
-            </div>
-            <div className='m-2 text-center'>
-              <i className='bi bi-globe h5 h3-lg'></i>
-              <h6>Website</h6>
-              <Link to='/' className='f text-decoration-none text-light'><p>https://youtube.com</p></Link>
-            </div>
+          <div className='col-6 justify-content-center '>
+            <Link to='mailto:subiq1917@gmail.com' target='_blank' className= ' text-s f text-decoration-none  text-light'>
+              <div className='m-2'>
+                <i className='text-s bi bi-envelope-fill h5 h3-lg'></i>
+                <h6 className='m-2'>Email</h6>
+              </div>
+            </Link>
+            <Link to='https://wa.me/+923420443066' target='_blank' className='f text-decoration-none text-light'>
+              <div className='m-2 text-center'> 
+                <i className='text-s bi bi-globe h5 h3-lg'></i>
+                <h6 className='m-2'>Whatsapp</h6>
+              </div>
+            </Link>
           </div>
         </div>
         <div className='col-lg-3 d-none d-lg-block py-5 text-center text-s '>
-          <div className='m-2'>
+          <div className='mt-4'>
             <i className='bi bi-phone-fill h5 h3-lg'></i>
-            <div>Mobile No</div>
             <p  className='text-light f'>+923420443066</p>
           </div>
-          <div className='m-2'>
+          <div className='mt-4'>
             <i className='bi bi-map-fill h5 h3-lg'></i>
-            <div>Location</div>
             <p  className='text-light f'>Sargodha</p>
           </div>
-          <div className='m-2'>
-            <i className='bi bi-envelope-fill h5 h3-lg'></i>
-            <div>Email</div>
-            <p className='text-light f'>subiq1917@gmail.com</p>
-          </div>
-          <div className='m-2'>
-            <i className='bi bi-globe h5 h3-lg'></i>
-            <div>Website</div>
-            <Link to='/' className='f text-decoration-none text-light'>https://youtube.com</Link>
-          </div>
+          <Link to='mailto:subiq1917@gmail.com' target='_blank' className='text-s f text-decoration-none  text-light'>
+            <div className='mt-4'>
+              <i className='text-s bi bi-envelope-fill h5 h3-lg'></i>
+              <div>Email</div>
+              <p className='text-light f'></p>
+            </div>
+          </Link>
+          
+          <Link to='https://wa.me/+923420443066' className='mt-4 text-p f text-decoration-none  text-light'>
+            <div className='mt-4'>
+            <i className='text-s bi bi-whatsapp h5 h3-lg'></i>
+            <div className='text-light'>Whatsapp</div>
+            </div>
+          </Link>
         </div>
         <div className='col-lg-9 col-12  justify-content-center'>
             <div className='d-flex align-items-center justify-content-between'>

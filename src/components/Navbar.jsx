@@ -5,7 +5,7 @@ function Navbar() {
       <div className="container-fluid">
         <a className="navbar-brand" href="#">Navbar</a>
         
-        <div className="justify-content-center" >
+        <div className="justify-content-center Outfit-Regular" >
           <div className="navbar-nav justify-content-center">
             <a className="mx-3 nav-link active" aria-current="page" href="#">Dashboard</a>
             <a className="mx-3 nav-link" href="#">Applications</a>

@@ -10,7 +10,7 @@ import Image6 from '../assets/winter_mountains_snow_130143_1920x1080.jpg'
 const Gallery=()=>{
   return (
   <motion.div  initial={{rotateY:90}} animate={{rotateY:0}} transition={{duration:0.5,ease:'backInOut'}} exit={{rotateY:-90}} layout  className='p-3 text-light bg-dark col-12 col-lg-10 '>
-    <h4  style={{fontFamily:'Outfit-Bold',fontWeight:'bolder'}} className='text-s'>Gallery</h4>
+    <h4  style={{fontFamily:'Outfit-Regular',fontWeight:'bolder'}} className='text-s'>Gallery</h4>
     <div className='d-flex align-items-center justify-content-center overflow-hidden '>
         <motion.div className='col-1 border-top border-bottom border-2 border-light rounded-5 overflow-hidden' transition={{ease:'backInOut',duration:0.5}} whileHover={{width:200,margin:'0px'}} style={{height:500,width:100,objectFit:'cover',margin:'2px'}}>
          <img src={Image1} className='' style={{height:'100%',width:'100%',objectFit:'cover'}}/>

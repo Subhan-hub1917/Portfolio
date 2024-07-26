@@ -1,17 +1,29 @@
-@font-face {
-  font-family: "Outfit-Bold";   /*Can be any text*/
+/* @font-face {
+  font-family: "Outfit-Bold";   
   src: local("Outfit-Bold"),
     url("./components//fonts/Outfit-Bold.ttf") format("ttf");
 }
 @font-face {
-  font-family: "Outfit-Medium";   /*Can be any text*/
+  font-family: "Outfit-Medium";  
   src: local("Outfit-Medium"),
     url("./components//fonts/Outfit-Medium.ttf") format("ttf");
 }
 @font-face {
-  font-family: "Outfit-Regular";   /*Can be any text*/
+  font-family: "Outfit-Regular";  
   src: local("Outfit-Regular"),
     url("./components//fonts/Outfit-Regular.ttf") format("ttf");
+} */
+.Outfit-Regular {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 650;
+  font-style: normal;
+}
+.Outfit {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 }
 body {
   -webkit-user-select: none; /* Safari */

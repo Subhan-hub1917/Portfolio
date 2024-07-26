@@ -6,13 +6,13 @@ const Aboutme =()=> {
   return (
   <motion.div initial={{rotateY:90}} animate={{rotateY:0}} transition={{duration:0.5,ease:'backInOut'}} exit={{rotateY:-90}} layout style={{fontFamily:'Outfit-Regular'}} className='p-5 text-light col-12 col-lg-10 bg-dark'>
   <div className='p-2 align-items-center '>
-      <div>
-        <h3 style={{fontFamily:'Outfit-Bold',fontWeight:'bolder'}}><span className='text-s'>About Me</span></h3>
+      <div className=' Outfit'>
+        <h3 style={{fontFamily:'Outfit-Regular',fontWeight:'bolder'}}><span className='text-s'>About Me</span></h3>
         <h6>I'm Motivated<span className='text-s'> Web and Application Developer</span></h6>
         <p>I am a BSCS undergraduate student with a strong foundation in computer science principles. My skills include web development, React Native, and creating efficient, maintainable code. I am dedicated to delivering high-quality projects while keeping clients informed and engaged throughout the process.</p>
       </div>
       
-      <div className='row d-flex align-items-center justify-content-between'>
+      <div className='row d-flex align-items-center justify-content-between  Outfit'>
         <div className='col-lg-6 col-12'>
             <div className='row d-flex m-3'>
               <div className='col-md-6 col-12 text-center'>

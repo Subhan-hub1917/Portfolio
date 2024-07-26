@@ -14,6 +14,7 @@ import Nav from './components/Nav';
 import './components/fonts/Outfit-Bold.ttf'
 import './components/fonts/Outfit-Medium.ttf'
 import './components/fonts/Outfit-Regular.ttf'
+import Projects from './components/Projects';
 function App(){
   const location =useLocation();
   return (

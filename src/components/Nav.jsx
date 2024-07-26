@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 
 const Nav = () => {
   return (
-    <ul className="list container-fluid w-100 d-lg-none d-flex justify-content-center" style={{height:60}}>
-    <li><Link to="/" className="link">
+    <ul className="d-lg-none d-flex list container-fluid w-100  justify-content-center  Outfit-Regular" style={{height:60}}>
+    <li ><Link to="/" className="link">
         Home</Link></li>
     <li><Link to="/Aboutme" className="link  ">
         About</Link></li>
